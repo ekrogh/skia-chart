@@ -72,13 +72,23 @@ namespace TestApp.ViewModels
 			return new List<LineChart> { linear, random1, linear3, random2 };
 		}
 
-		private IEnumerable<float> GetXValues()
+		private IEnumerable<string> GetXValues()
 		{
-			for (int i = 0; i < 500; i++)
+			DateTime xDateTimeValue = new DateTime(1978, 11, 25);
+			for (int i = 1; i <= 499; i++)
 			{
-				yield return i + 1;
+				yield return xDateTimeValue.ToShortDateString();
+				xDateTimeValue = xDateTimeValue.AddMonths(1);
 			}
 		}
+
+		//private IEnumerable<float> GetXValues()
+		//{
+		//	for (int i = 0; i < 500; i++)
+		//	{
+		//		yield return i + 1;
+		//	}
+		//}
 
 		private IEnumerable<float> Random(int lowerLimit)
 		{
