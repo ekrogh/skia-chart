@@ -62,10 +62,6 @@
     <Reference Include="GLibSharp, Version=3.22.25.98, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\GLibSharp.3.22.25.98\lib\netstandard2.0\GLibSharp.dll</HintPath>
     </Reference>
-    <Reference Include="gtk-dotnet, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\gtk-dotnet.dll</HintPath>
-    </Reference>
     <Reference Include="PangoSharp, Version=3.22.25.98, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\PangoSharp.3.22.25.98\lib\netstandard2.0\PangoSharp.dll</HintPath>
     </Reference>
@@ -139,6 +135,7 @@
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.4.7.0.1179\lib\netstandard2.0\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="gtk-dotnet, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">

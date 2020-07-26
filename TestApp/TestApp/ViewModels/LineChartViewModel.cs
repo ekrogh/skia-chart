@@ -75,7 +75,7 @@ namespace TestApp.ViewModels
 		private IEnumerable<string> GetXValues()
 		{
 			DateTime xDateTimeValue = new DateTime(1978, 11, 25);
-			for (int i = 1; i <= 499; i++)
+			for (int i = 1; i <= 500; i++)
 			{
 				yield return xDateTimeValue.ToShortDateString();
 				xDateTimeValue = xDateTimeValue.AddMonths(1);
